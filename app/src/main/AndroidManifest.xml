@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.loginapplication" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Loginapplication" >
+
+        <activity android:name=".editprofile.EditProfile" />
+        <activity android:name=".login.Login"/>
+        <activity android:name=".notes.notesMainActivity"/>
+        <activity android:name=".gmailgo"></activity>
+        <activity android:name=".youtubegoto" />
+        <activity android:name=".timetable.timetable" />
+        <activity android:name=".pdf.View_PDF_Files" />
+        <activity android:name=".notes.AddNote"/>
+
+        <activity android:name=".notes.Edit"/>
+        <activity android:name=".notes.Detail"/>
+
+        <activity android:name=".pdf.pdfmain" />
+        <activity android:name=".timetable.tuesdaydetailsActivity" />
+        <activity android:name=".staffdetails.Staffdetails" />
+        <activity android:name=".remainder.MainPage" />
+        <activity android:name=".register.Register" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <receiver android:name=".remainder.NotifierAlarm"/>
+    </application>
+
+</manifest>
